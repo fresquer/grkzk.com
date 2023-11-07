@@ -23,7 +23,7 @@ export default function TextBlock() {
                     .typeString('<br><br>there is so much to live for')
                     .pauseFor(timePause)
                     .callFunction(() => scrollWritting())
-                    .typeString('<br><br>there are so many stories to hear')
+                    .typeString('<br><br>there are so many stories to listen')
                     .pauseFor(timePause)
                     .callFunction(() => scrollWritting())
                     .typeString('<br><br>there are so much life to share and enjoy')

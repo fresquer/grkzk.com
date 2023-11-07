@@ -9,6 +9,16 @@ export const metadata = {
   icons: {
     icon: 'favicon.png',
   },
+  openGraph: {
+    title: 'grkzk | no place for fear',
+    description: 'grkzk | "no place for fear" is out',
+    url: 'https://grkzk.com',
+    images: [
+      {
+        url: '/images/og-desc-grkzk.png',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }) {
