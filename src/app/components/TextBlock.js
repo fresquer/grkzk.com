@@ -47,8 +47,8 @@ export default function TextBlock() {
     }, [hasRun]);
 
     return (
-        <section className="bg-brand-blue rounded-2xl min-h-24 p-14 mx-8">
-            <div ref={textBlockRef} className='text-black text-lg'></div>
+        <section className="bg-brand-blue rounded-2xl min-h-24 p-14 mx-8 flex justify-center">
+            <div ref={textBlockRef} className='text-black text-lg w-max-md'></div>
         </section>
     );
 }
