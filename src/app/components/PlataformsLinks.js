@@ -21,10 +21,10 @@ export default function PlataformsLinks() {
             label: 'amazon music',
             url: 'https://music.amazon.es/albums/B0CJCNVV15'
         },
-        // {
-        //     label: 'tidal',
-        //     url: '#'
-        // },
+        {
+            label: 'tidal',
+            url: 'https://tidal.com/browse/album/317167099'
+        },
         {
             label: 'youtube',
             url: 'https://youtu.be/lg6VcRJ18nI'
