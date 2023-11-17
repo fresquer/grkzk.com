@@ -18,7 +18,7 @@ This page has been created using the following technologies:
 Listen to grkzk's new album on the following platforms:
 
 - [Spotify](https://open.spotify.com/intl-es/album/4eqNUsGbkzWfDDZjNIaoJK)
-- [Bandcamp](https://grkzk.bandcamp.com/)
+- [Bandcamp](https://grkzk.bandcamp.com/album/no-place-for-fear)
 - [SoundCloud](https://soundcloud.com/grkzk/sets/no-place-for-fear)
 - [Deezer](https://www.deezer.com/es/album/490708385)
 - [Amazon Music](https://music.amazon.es/albums/B0CJCNVV15)

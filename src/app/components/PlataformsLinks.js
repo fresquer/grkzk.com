@@ -7,7 +7,7 @@ export default function PlataformsLinks() {
         },
         {
             label: 'bandcamp',
-            url: 'https://grkzk.bandcamp.com/'
+            url: 'https://grkzk.bandcamp.com/album/no-place-for-fear'
         },
         {
             label: 'soundcloud',
