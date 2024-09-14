@@ -2,8 +2,8 @@
 export default function TopBannerIndex() {
     return (
         <section>
-            <div className="mb-16 flex justify-center py-8">
-                <div className="flex justify-center px-16 ">
+            <div className="md:mb-16 block md:flex justify-center py-8">
+                <div className="flex justify-center px-16 mb-8 md:mb-0">
                     <img src="/images/portada-grkzk.webp" alt="portada" className="w-full max-w-64 box-shadow-cover rounded-xl" />
                 </div>
                 <div className="flex items-center justify-center flex-col">
