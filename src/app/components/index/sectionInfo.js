@@ -40,7 +40,7 @@ export default function SectionInfo() {
                     {dataSongList.map((item, index) => (
                         <div key={index} className="flex flex-col gap-4 w-full border-dashed border-t border-b border-[#2f2f2f] py-4 px-16">
                             <div className="flex flex-col gap-2">
-                                <a href={item.url} target="_blank" rel="noreferrer" className="text-sm hover:opacity-75">
+                                <a href={item.url} target="_blank" rel="noreferrer" className="text-sm hover:underline">
                                     <span className="font-bold">
                                         {item.name}
                                     </span> - {item.artist}
