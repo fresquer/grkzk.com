@@ -41,9 +41,15 @@ export default function TextBlock() {
             }
         }, { threshold: 1 });
 
-        observer.observe(textBlockRef.current);
+        if (textBlockRef.current) {
+            observer.observe(textBlockRef.current);
+        }
 
-        return () => observer.unobserve(textBlockRef.current);
+        return () => {
+            if (textBlockRef.current) {
+                observer.unobserve(textBlockRef.current);
+            }
+        };
     }, [hasRun]);
 
     return (

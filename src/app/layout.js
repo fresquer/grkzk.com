@@ -21,10 +21,21 @@ export const metadata = {
   },
 }
 
+import NameRoller from './components/NameRoller'
+import Menu from './components/Menu'
+import Footer from './components/Footer'
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <div className="container mx-auto border-[#2f2f2f] border-b-2 border-r-2 border-l-2">
+          <NameRoller></NameRoller>
+          <Menu></Menu>
+          {children}
+        </div>
+        <Footer></Footer>
+      </body>
     </html>
   )
 }
