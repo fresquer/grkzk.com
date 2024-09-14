@@ -25,6 +25,14 @@ export default function Menu() {
         },
     ]
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto'
+        }
+    }, [isOpen])
+
     return (
         <div className="text-white flex justify-between items-center py-4 px-8 border-b border-[#2f2f2f]">
             <div>
@@ -46,7 +54,7 @@ export default function Menu() {
             {
                 isOpen &&
                 <div
-                    className='absolute bg-black bg-opacity-90 w-screen h-screen top-0 left-0'
+                    className='absolute bg-black bg-opacity-90 w-screen h-[calc(100dvh)] top-0 left-0 scrol'
                 >
                     <div
 
