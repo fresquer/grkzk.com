@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={font.className}>
-        <div className="container mx-auto border-[#2f2f2f] border-b-2 border-r-2 border-l-2">
+        <div className="container mx-auto border-[#2f2f2f] border border-t-0">
           <NameRoller></NameRoller>
           <Menu></Menu>
           {children}

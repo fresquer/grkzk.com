@@ -6,7 +6,7 @@ export default function NoPlaceForFearPage() {
     return (
         <>
             <TopBanner></TopBanner>
-            <main className='container mx-auto'>
+            <main className='container mx-auto pb-8'>
                 <PlataformsLinks></PlataformsLinks>
                 <TextBlock></TextBlock>
             </main>
