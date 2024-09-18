@@ -2,32 +2,23 @@ import TopBannerIndex from './components/index/TopBannerIndex'
 import PlataformsLinks from './components/PlataformsLinks'
 import TextBlock from './components/TextBlock'
 import SectionInfo from './components/index/sectionInfo'
+import { createClient } from '@/prismicio'
+import { formatDataFromPrismic } from '@/util/util'
+export default async function Home() {
 
-export default function Home() {
-  const sections = [
-    {
-      key: 'productions',
-      title: 'PRODUCTIONS',
-    },
-    {
-      key: 'mixes',
-      title: 'MIXES',
-    },
-    {
-      key: 'live',
-      title: 'LIVE',
-    },
-  ]
+  const client = createClient();
+
+  const homePage = await client.getSingle("home", { 'fetchLinks': ['content_type.type_name', 'music_item.title', 'music_item.link', 'music_item.description'] });
+  const musicItems = formatDataFromPrismic(homePage.data.slices);
+
 
   return (
     <>
       <TopBannerIndex></TopBannerIndex>
       <hr className="border-[#2f2f2f]  w-full mb-8" />
       <main className='container mx-auto space-y-16 py-8'>
-        {/* <PlataformsLinks></PlataformsLinks>
-        <TextBlock></TextBlock> */}
-        {sections.map((item, index) => (
-          <SectionInfo key={index} title={item.title}></SectionInfo>
+        {musicItems.map((item, index) => (
+          <SectionInfo key={index} title={item.block_name} data={item.items}></SectionInfo>
         ))}
       </main>
     </>
