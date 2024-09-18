@@ -15,7 +15,7 @@ export const metadata = {
     url: 'https://grkzk.com',
     images: [
       {
-        url: 'https://grkzk-com.vercel.app/images/og-desc-grkzk.png',
+        url: 'https://grkzk-com.vercel.app/images/og-desc-grkzk_v2.jpg',
       },
     ],
   },
