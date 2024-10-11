@@ -1,0 +1,24 @@
+{
+  "format": "custom",
+  "id": "content_type",
+  "label": "content type",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "type_name": {
+        "type": "Text",
+        "config": {
+          "label": "Type name",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

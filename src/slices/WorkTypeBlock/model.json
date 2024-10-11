@@ -1,0 +1,48 @@
+{
+  "id": "work_type_block",
+  "type": "SharedSlice",
+  "name": "WorkTypeBlock",
+  "description": "WorkTypeBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "type": {
+          "type": "Link",
+          "config": {
+            "label": "type",
+            "select": "document",
+            "customtypes": [
+              "content_type"
+            ]
+          }
+        },
+        "music_items": {
+          "type": "Group",
+          "config": {
+            "label": "music items",
+            "repeat": true,
+            "fields": {
+              "music_item": {
+                "type": "Link",
+                "config": {
+                  "label": "music item",
+                  "select": "document",
+                  "customtypes": [
+                    "music_item"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
