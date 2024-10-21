@@ -10,6 +10,11 @@ export default function Footer() {
                 <a href="https://twitter.com/grkzkzk" target="_blank" rel="noopener noreferrer">
                     <Image src="/images/twitter-icon.svg" width={32} height={32} alt="Twitter" />
                 </a>
+                {/* mailto */}
+                <a href='mailto:grkzkzk@gmail' target='_blank'>
+                    <Image src="/images/email.svg" width={37} height={32} alt="Instagram" />
+
+                </a>
             </div>
             <p className="text-sm text-[#b1b1b1]">@ {new Date().getFullYear()} grkzk.</p>
         </footer>
