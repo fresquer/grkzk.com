@@ -5,13 +5,13 @@ const font = Red_Hat_Mono({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'grkzk | no place for fear',
-  description: 'grkzk | "no place for fear" is out',
+  description: 'grkzk | prod. mix. master.',
   icons: {
     icon: 'favicon.png',
   },
   openGraph: {
     title: 'grkzk | no place for fear',
-    description: 'grkzk | "no place for fear" is out',
+    description: 'grkzk | prod. mix. master.',
     url: 'https://grkzk.com',
     images: [
       {
