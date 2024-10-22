@@ -3,13 +3,13 @@ import Image from 'next/image'
 export default function Footer() {
     return (
         <footer className="flex justify-center flex-col items-center py-8 text-[#BECDCA] text-xs">
-            <div className="rrss flex gap-12 mb-8">
-                <a className="hover:opacity-70 transition-opacity " href="https://www.instagram.com/grkzk/" target="_blank" rel="noopener noreferrer">
+            <div className="rrss block space-y-4 md:space-y-0 md:flex gap-12 mb-8">
+                <a className="block hover:opacity-70 transition-opacity " href="https://www.instagram.com/grkzk/" target="_blank" rel="noopener noreferrer">
                     <span>
                         .insta/  @grkzk
                     </span>
                 </a>
-                <a className="hover:opacity-70 transition-opacity " href="https://twitter.com/grkzkzk" target="_blank" rel="noopener noreferrer">
+                <a className="block hover:opacity-70 transition-opacity " href="https://twitter.com/grkzkzk" target="_blank" rel="noopener noreferrer">
                     <span>
                         .tw/   @grkzkzk
                     </span>
