@@ -14,11 +14,11 @@ export default function Footer() {
                         .tw/   @grkzkzk
                     </span>
                 </a>
-                <p>
+                <a className="block hover:opacity-70 transition-opacity " href="mailto:grkzkzk@gmail.com" target="_blank" rel="noopener noreferrer">
                     <span>
                         .mail/ grkzkzk [at] gmail.com
                     </span>
-                </p>
+                </a>
             </div>
             <p className="text-xs text-[#b1b1b1]">@ {new Date().getFullYear()} grkzk.</p>
         </footer>
