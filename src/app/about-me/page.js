@@ -12,11 +12,11 @@ export default async function AboutMe() {
                         <img src="/images/grkzk-avatar.webp" alt="" className="" />
                     </div>
                 </div>
-                <div className="py-8  md:py-16 px-8">
-                    <div className="max-w-sm mx-auto">
+                <div className="py-8  md:py-16 px-16">
+                    <div className="mx-auto">
                         <h1 className="text-4xl font-bold mb-4">About me</h1>
                         {page.data.text.map((text, index) => (
-                            <p className="text-sm mb-4" key={index}>
+                            <p className="text-sm mb-4 text-justify" key={index}>
                                 {text.text}
                             </p>
                         ))}
