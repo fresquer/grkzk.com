@@ -9,9 +9,9 @@ export default function Footer() {
                         .insta/  @grkzk
                     </span>
                 </a>
-                <a className="block hover:opacity-70 transition-opacity " href="https://twitter.com/grkzkzk" target="_blank" rel="noopener noreferrer">
+                <a className="block hover:opacity-70 transition-opacity " href="https://bsky.app/profile/grkzk.bsky.social" target="_blank" rel="noopener noreferrer">
                     <span>
-                        .tw/   @grkzkzk
+                        .bsky/   @grkzk
                     </span>
                 </a>
                 <a className="block hover:opacity-70 transition-opacity " href="mailto:grkzkzk@gmail.com" target="_blank" rel="noopener noreferrer">

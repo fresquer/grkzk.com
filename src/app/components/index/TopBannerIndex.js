@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function TopBannerIndex() {
     return (
@@ -9,12 +10,15 @@ export default function TopBannerIndex() {
                 <div className="flex items-center justify-center flex-col">
                     <p className="text-center text-sm mb-4 text-brand-blue">new album</p>
                     <p className="text-center text-[#fff] gothic-font leading-4 text-5xl underline mb-6">
-                        <a href="https://orcd.co/noplaceforfear" target="_blank" rel="noopener noreferrer">no place for fear</a>
+                        <Link href="/no-place-for-fear" className="text-white">
+                            no place for fear
+                        </Link>
                     </p>
                     <p className="text-center text-sm mb-4 text-brand-blue">
-                        <a href="https://orcd.co/noplaceforfear" target="_blank" rel="noopener noreferrer">listen</a>
+                        <Link href="/no-place-for-fear" className="text-white">
+                            listen
+                        </Link>
                     </p>
-
                 </div>
             </div>
         </section>
