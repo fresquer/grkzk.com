@@ -224,6 +224,17 @@ interface MusicItemDocumentData {
   description: prismic.KeyTextField;
 
   /**
+   * Release Date field in *Music item*
+   *
+   * - **Field Type**: Date
+   * - **Placeholder**: *None*
+   * - **API ID Path**: music_item.release_date
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#date
+   */
+  release_date: prismic.DateField;
+
+  /**
    * Slice Zone field in *Music item*
    *
    * - **Field Type**: Slice Zone

@@ -8,7 +8,7 @@ export default async function Home() {
 
   const client = createClient();
 
-  const homePage = await client.getSingle("home", { 'fetchLinks': ['content_type.type_name', 'music_item.title', 'music_item.link', 'music_item.description'] });
+  const homePage = await client.getSingle("home", { 'fetchLinks': ['content_type.type_name', 'music_item.title', 'music_item.link', 'music_item.description', 'music_item.release_date'] });
   const musicItems = formatDataFromPrismic(homePage.data.slices);
 
 

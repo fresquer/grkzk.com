@@ -6,12 +6,13 @@ export default function SectionInfo({ title, data }) {
                 <div className="flex flex-wrap gap-0 justify-center">
                     {data.map((item, index) => (
                         <div key={index} className="flex flex-col gap-4 w-full border-dashed border-t border-b border-[#2f2f2f] py-4 px-16 lowercase">
-                            <div className="flex flex-col gap-2">
-                                <a href={item.link} target="_blank" rel="noreferrer" className="text-sm hover:underline">
+                            <div className="">
+                                <a href={item.link} target="_blank" rel="noreferrer" className="text-sm hover:underline block">
                                     <span className="font-bold ">
                                         {item.title}
                                     </span>
                                 </a>
+                                <p className="text-xs text-gray-500 mb-2 mt-1">release date: {item.release_date}</p>
                                 <p className="text-xs text-slate-400 lowercase">{item.description}</p>
                             </div>
                         </div>

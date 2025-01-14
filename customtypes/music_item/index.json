@@ -43,6 +43,13 @@
           "placeholder": ""
         }
       },
+      "release_date": {
+        "type": "Date",
+        "config": {
+          "label": "Release Date",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
