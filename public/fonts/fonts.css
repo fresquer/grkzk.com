@@ -1,8 +1,0 @@
-@font-face {
-  font-family: "Uberho";
-  src: url("subset-UberholmeItalic.woff2") format("woff2"),
-    url("subset-UberholmeItalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}

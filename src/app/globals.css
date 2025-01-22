@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('../../public/fonts/fonts.css');
 
 :root {
   --brand-blue: #becdca,
@@ -24,10 +23,6 @@ body {
 
 .box-shadow-cover {
   box-shadow: 0px 3px 12px 0px rgba(190, 205, 202, 0.25);
-}
-
-.gothic-font {
-  font-family: 'Uberho', sans-serif;
 }
 
 .boxShadowComming {

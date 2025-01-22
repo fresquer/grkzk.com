@@ -9,7 +9,7 @@ export default function TopBannerIndex() {
                 </div>
                 <div className="flex items-center justify-center flex-col">
                     <p className="text-center text-sm mb-4 text-brand-blue">new album</p>
-                    <p className="text-center text-[#fff] gothic-font leading-4 text-5xl underline mb-6">
+                    <p className="text-center text-[#fff] text-4xl font-bold underline mb-6">
                         <Link href="/no-place-for-fear" className="text-white">
                             no place for fear
                         </Link>
