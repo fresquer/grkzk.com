@@ -9,7 +9,7 @@ export default function TopBanner() {
                 <div>
                     <p className="text-center text-sm mb-4 text-brand-blue">new album</p>
                     <p className="text-center text-[#fff] text-4xl font-bold underline">
-                        <a href="https://orcd.co/noplaceforfear" target="_blank" rel="noopener noreferrer">no place for fear</a>
+                        no place for fear
                     </p>
                 </div>
             </div>
