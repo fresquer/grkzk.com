@@ -80,6 +80,126 @@ export type AboutMeDocument<Lang extends string = string> =
     Lang
   >;
 
+type ClientFeedbackItemDocumentDataSlicesSlice = never;
+
+/**
+ * Content for Client Feedback Item documents
+ */
+interface ClientFeedbackItemDocumentData {
+  /**
+   * Title field in *Client Feedback Item*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_item.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Subtitle field in *Client Feedback Item*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_item.subtitle
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtitle: prismic.KeyTextField;
+
+  /**
+   * Feedback text field in *Client Feedback Item*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_item.feedback_text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feedback_text: prismic.RichTextField;
+
+  /**
+   * photo field in *Client Feedback Item*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_item.photo
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  photo: prismic.ImageField<never>;
+
+  /**
+   * Releated Work field in *Client Feedback Item*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_item.releated_work
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  releated_work: prismic.ContentRelationshipField;
+
+  /**
+   * Slice Zone field in *Client Feedback Item*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_item.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<ClientFeedbackItemDocumentDataSlicesSlice> /**
+   * Meta Title field in *Client Feedback Item*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: client_feedback_item.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_title: prismic.KeyTextField;
+
+  /**
+   * Meta Description field in *Client Feedback Item*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: client_feedback_item.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Client Feedback Item*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_item.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+}
+
+/**
+ * Client Feedback Item document from Prismic
+ *
+ * - **API ID**: `client_feedback_item`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ClientFeedbackItemDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ClientFeedbackItemDocumentData>,
+    "client_feedback_item",
+    Lang
+  >;
+
 /**
  * Content for content type documents
  */
@@ -295,6 +415,7 @@ export type MusicItemDocument<Lang extends string = string> =
 
 export type AllDocumentTypes =
   | AboutMeDocument
+  | ClientFeedbackItemDocument
   | ContentTypeDocument
   | HomeDocument
   | MusicItemDocument;
@@ -384,6 +505,9 @@ declare module "@prismicio/client" {
       AboutMeDocument,
       AboutMeDocumentData,
       AboutMeDocumentDataSlicesSlice,
+      ClientFeedbackItemDocument,
+      ClientFeedbackItemDocumentData,
+      ClientFeedbackItemDocumentDataSlicesSlice,
       ContentTypeDocument,
       ContentTypeDocumentData,
       HomeDocument,
