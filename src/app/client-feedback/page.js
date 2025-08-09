@@ -64,7 +64,7 @@ export default async function ClientFeedback() {
                                             <p className="mt-1 opacity-80">{item.data.subtitle}</p>
                                         )}
 
-                                        <div className="prose prose-invert mt-6 text-sm">
+                                        <div className="prose prose-invert mt-6 text-sm text-justify">
                                             <PrismicRichText field={item.data.feedback_text} />
                                         </div>
 

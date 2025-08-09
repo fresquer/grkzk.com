@@ -8,8 +8,10 @@ export default async function AboutMe() {
         <div className="container mx-auto">
             <div className="text-white grid grid-cols-1 md:grid-cols-2">
                 <div className="border-r-none md:border-r border-[#2f2f2f] pt-16 pb-0 px-8">
-                    <div className="max-w-sm mx-auto">
-                        <img src="/images/grkzk-avatar.webp" alt="" className="" />
+                    <div className="max-w-sm mx-auto space-y-4">
+                        <img src="/images/grkzk-avatar.webp" alt="grkzk profile" />
+                        <img src="/images/grkzk-dj.jpg" alt="grkzk dj" />
+
                     </div>
                 </div>
                 <div className="py-8  md:py-16 px-16">
