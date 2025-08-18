@@ -1,50 +1,34 @@
-export default function PlataformsLinks() {
-
-    const plataforms = [
-        {
-            label: 'spotify',
-            url: 'https://open.spotify.com/intl-es/album/4eqNUsGbkzWfDDZjNIaoJK'
-        },
-        {
-            label: 'bandcamp',
-            url: 'https://grkzk.bandcamp.com/album/no-place-for-fear'
-        },
-        {
-            label: 'soundcloud',
-            url: 'https://soundcloud.com/grkzk/sets/no-place-for-fear'
-        },
-        {
-            label: 'deezer',
-            url: 'https://www.deezer.com/es/album/490708385'
-        },
-        {
-            label: 'amazon music',
-            url: 'https://music.amazon.es/albums/B0CJCNVV15'
-        },
-        {
-            label: 'tidal',
-            url: 'https://tidal.com/browse/album/317167099'
-        },
-        {
-            label: 'youtube',
-            url: 'https://youtu.be/lg6VcRJ18nI'
-        },
-        {
-            label: 'apple music',
-            url: 'https://music.apple.com/es/album/no-place-for-fear/1708071872#'
-        },
-    ]
-
+export default function PlataformsLinks({ links = [] }) {
+    if (!links.length) {
+        return (
+            <p className="text-center my-16 opacity-70">
+                No links available
+            </p>
+        )
+    }
 
     return (
         <div className="space-y-8 text-center text-brand-blue my-16">
-            {plataforms.map((plataform, index) => (
-                <a href={plataform.url} target="_blank" key={index} className="block underline text-xl">
-                    {plataform.label}
-                </a>
-            ))}
+            {links.map((item, index) => {
+                const label = item?.link_title || 'link'
+                const url =
+                    item?.link_item?.url ||
+                    (item?.link_item?.link_type === 'Media' ? item?.link_item?.name : null)
+
+                if (!url) return null
+
+                return (
+                    <a
+                        key={index}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block underline text-xl"
+                    >
+                        {label}
+                    </a>
+                )
+            })}
         </div>
     )
 }
-
-

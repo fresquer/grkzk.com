@@ -201,6 +201,99 @@ export type ClientFeedbackItemDocument<Lang extends string = string> =
   >;
 
 /**
+ * Item in *client feedback PAGE → feedback items*
+ */
+export interface ClientFeedbackPageDocumentDataFeedbackItemsItem {
+  /**
+   * client feedback item field in *client feedback PAGE → feedback items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_page.feedback_items[].client_feedback_item
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  client_feedback_item: prismic.ContentRelationshipField<"client_feedback_item">;
+}
+
+type ClientFeedbackPageDocumentDataSlicesSlice = never;
+
+/**
+ * Content for client feedback PAGE documents
+ */
+interface ClientFeedbackPageDocumentData {
+  /**
+   * feedback items field in *client feedback PAGE*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_page.feedback_items[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  feedback_items: prismic.GroupField<
+    Simplify<ClientFeedbackPageDocumentDataFeedbackItemsItem>
+  >;
+
+  /**
+   * Slice Zone field in *client feedback PAGE*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_page.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<ClientFeedbackPageDocumentDataSlicesSlice> /**
+   * Meta Title field in *client feedback PAGE*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: client_feedback_page.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_title: prismic.KeyTextField;
+
+  /**
+   * Meta Description field in *client feedback PAGE*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: client_feedback_page.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *client feedback PAGE*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: client_feedback_page.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+}
+
+/**
+ * client feedback PAGE document from Prismic
+ *
+ * - **API ID**: `client_feedback_page`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ClientFeedbackPageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<ClientFeedbackPageDocumentData>,
+    "client_feedback_page",
+    Lang
+  >;
+
+/**
  * Content for content type documents
  */
 interface ContentTypeDocumentData {
@@ -413,12 +506,117 @@ export type MusicItemDocument<Lang extends string = string> =
     Lang
   >;
 
+/**
+ * Item in *no place for fear PAGE → links to music*
+ */
+export interface NoPlaceForFearPageDocumentDataLinksToMusicItem {
+  /**
+   * link title field in *no place for fear PAGE → links to music*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: no_place_for_fear_page.links_to_music[].link_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link_title: prismic.KeyTextField;
+
+  /**
+   * link item field in *no place for fear PAGE → links to music*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: El link a la musiqueta
+   * - **API ID Path**: no_place_for_fear_page.links_to_music[].link_item
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link_item: prismic.LinkField;
+}
+
+type NoPlaceForFearPageDocumentDataSlicesSlice = never;
+
+/**
+ * Content for no place for fear PAGE documents
+ */
+interface NoPlaceForFearPageDocumentData {
+  /**
+   * links to music field in *no place for fear PAGE*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: no_place_for_fear_page.links_to_music[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  links_to_music: prismic.GroupField<
+    Simplify<NoPlaceForFearPageDocumentDataLinksToMusicItem>
+  >;
+
+  /**
+   * Slice Zone field in *no place for fear PAGE*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: no_place_for_fear_page.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<NoPlaceForFearPageDocumentDataSlicesSlice> /**
+   * Meta Title field in *no place for fear PAGE*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: no_place_for_fear_page.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_title: prismic.KeyTextField;
+
+  /**
+   * Meta Description field in *no place for fear PAGE*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: no_place_for_fear_page.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *no place for fear PAGE*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: no_place_for_fear_page.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+}
+
+/**
+ * no place for fear PAGE document from Prismic
+ *
+ * - **API ID**: `no_place_for_fear_page`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type NoPlaceForFearPageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<NoPlaceForFearPageDocumentData>,
+    "no_place_for_fear_page",
+    Lang
+  >;
+
 export type AllDocumentTypes =
   | AboutMeDocument
   | ClientFeedbackItemDocument
+  | ClientFeedbackPageDocument
   | ContentTypeDocument
   | HomeDocument
-  | MusicItemDocument;
+  | MusicItemDocument
+  | NoPlaceForFearPageDocument;
 
 /**
  * Item in *WorkTypeBlock → Default → Primary → music items*
@@ -508,6 +706,10 @@ declare module "@prismicio/client" {
       ClientFeedbackItemDocument,
       ClientFeedbackItemDocumentData,
       ClientFeedbackItemDocumentDataSlicesSlice,
+      ClientFeedbackPageDocument,
+      ClientFeedbackPageDocumentData,
+      ClientFeedbackPageDocumentDataFeedbackItemsItem,
+      ClientFeedbackPageDocumentDataSlicesSlice,
       ContentTypeDocument,
       ContentTypeDocumentData,
       HomeDocument,
@@ -516,6 +718,10 @@ declare module "@prismicio/client" {
       MusicItemDocument,
       MusicItemDocumentData,
       MusicItemDocumentDataSlicesSlice,
+      NoPlaceForFearPageDocument,
+      NoPlaceForFearPageDocumentData,
+      NoPlaceForFearPageDocumentDataLinksToMusicItem,
+      NoPlaceForFearPageDocumentDataSlicesSlice,
       AllDocumentTypes,
       WorkTypeBlockSlice,
       WorkTypeBlockSliceDefaultPrimaryMusicItemsItem,
