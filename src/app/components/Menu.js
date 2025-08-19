@@ -20,6 +20,10 @@ export default function Menu() {
             url: '/no-place-for-fear',
         },
         {
+            label: 'client feedback',
+            url: '/client-feedback'
+        },
+        {
             label: 'about me',
             url: '/about-me',
         },
